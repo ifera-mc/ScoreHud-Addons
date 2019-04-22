@@ -2,9 +2,7 @@
 
 ### List of addons that are compatible with ScoreHud.
 
-<br />
 >**I won't be making any more. So if you would like a plugin to be supported then ask the author of that plugin to make a ScoreHud addon.**
-<br />
 
 # How to setup?
 
