@@ -22,3 +22,4 @@
 |BasicAddon|`{name}`, `{online}`, `{max_online}`, `{item_name}`, `{item_id}`, `{item_meta}`, `{item_count}`, `{x}`, `{y}`, `{z}`, `{load}`, `{tps}`, `{level_name}`, `{level_folder_name}`, `{ip}`, `{ping}`, `{time}`, `{date}`|`none`|
 |CombatLoggerAddon|`{combat_duration}`|[CombatLogger](https://poggit.pmmp.io/ci/JackNoordhuis/PocketMine-Plugins/CombatLogger)|
 |BlockSniperAddon|`{brush_shape}`, `{brush_type}`, `{brush_size}`, `{brush_mode}`|[BlockSniper-API-4.0.0](https://github.com/BlockHorizons/BlockSniper/tree/API-4.0.0)|
+|OnlineTimeAddon|`{total_time}`, `{session_time}`|[OnlineTime](https://github.com/Zedstar16/OnlineTime)|
