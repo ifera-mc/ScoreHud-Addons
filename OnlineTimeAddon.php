@@ -21,19 +21,26 @@ namespace JackMD\ScoreHud\Addons {
             $this->onlinetime = $this->getServer()->getPluginManager()->getPlugin("OnlineTime");
         }
 
-
         /**
          * @param Player $player
          * @return array
          */
         public function getProcessedTags(Player $player): array{
             return [
-                "{total_time}"   => $this->onlinetime->getTotalTime($player->getName()),
-                "{session_time}" => $this->onlinetime->getSessionTime($player->getName()),
+                "{total_time}"   => $this->getTotal($player->getName()),
+                "{session_time}" => $this->getSession($player->getName()),
             ];
+        }
+
+        public function getTotal($pn){
+            $pn = strtolower($pn);
+            return isset(Main::$times[$pn]) ? $this->onlinetime->getTotalTime($pn) : "Error";
+        }
+
+        public function getSession($pn){
+            $pn = strtolower($pn);
+            return isset(Main::$times[$pn]) ? $this->onlinetime->getSessionTime($pn) : "Error";
         }
 
     }
 }
-
-
