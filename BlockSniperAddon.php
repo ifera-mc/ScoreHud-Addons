@@ -6,6 +6,7 @@ declare(strict_types=1);
  * @name BlockSniperAddon
  * @main BlockHorizons\ScoreHud\Addons\BlockSniperAddon
  * @depend BlockSniper
+ * @api 4.0.0
  */
 namespace BlockHorizons\ScoreHud\Addons {
 
@@ -21,15 +22,24 @@ namespace BlockHorizons\ScoreHud\Addons {
 		 * @return array
 		 */
 		public function getProcessedTags(Player $player): array{
-			$brush = SessionManager::getPlayerSession($player)->getBrush();
-			$size = (string) $brush->size;
-			if($brush->getShape()->usesThreeLengths()){
-				$size = (string) $brush->width . "x" . (string) $brush->length . "x" . (string) $brush->height;
+			$session = SessionManager::getPlayerSession($player);
+			$shape = $type = $mode = $size = "No Perm";
+			if($session !== null){
+				// We only set the correct values if the player has the permission required.
+				$brush = $session->getBrush();
+
+				$shape = $brush->getShape()->getName();
+				$type = $brush->getType()->getName();
+				$mode = $brush->mode === Brush::MODE_BRUSH ? "Brush" : "Selection";
+				$size = (string) $brush->size;
+				if($brush->getShape()->usesThreeLengths()){
+					$size = (string) $brush->width . "x" . (string) $brush->length . "x" . (string) $brush->height;
+				}
 			}
 			return [
-				"{brush_shape}" => $brush->getShape()->getName(),
-				"{brush_type}" => $brush->getType()->getName(),
-				"{brush_mode}" => $brush->mode === Brush::MODE_BRUSH ? "Brush" : "Selection",
+				"{brush_shape}" => $shape,
+				"{brush_type}" => $type,
+				"{brush_mode}" => $mode,
 				"{brush_size}" => $size,
 			];
 		}
