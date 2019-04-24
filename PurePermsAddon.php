@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 /**
  * @name PurePermsAddon
+ * @version 1.0.0
  * @main   JackMD\ScoreHud\Addons\PurePermsAddon
  * @depend PurePerms
  */

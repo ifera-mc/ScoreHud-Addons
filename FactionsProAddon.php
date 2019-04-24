@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 /**
  * @name FactionsProAddon
+ * @version 1.0.0
  * @main JackMD\ScoreHud\Addons\FactionsProAddon
  * @depend FactionsPro
  */

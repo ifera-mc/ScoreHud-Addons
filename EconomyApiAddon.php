@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 /**
  * @name EconomyApiAddon
+ * @version 1.0.0
  * @main JackMD\ScoreHud\Addons\EconomyApiAddon
  * @depend EconomyAPI
  */

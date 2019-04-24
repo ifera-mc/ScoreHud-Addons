@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 /**
  * @name BlockSniperAddon
+ * @version 1.0.0
  * @main BlockHorizons\ScoreHud\Addons\BlockSniperAddon
  * @depend BlockSniper
  * @api 4.0.0

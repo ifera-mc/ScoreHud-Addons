@@ -1,8 +1,9 @@
 <?php
-
 declare(strict_types = 1);
+
 /**
  * @name OnlineTimeAddon
+ * @version 1.0.0
  * @main JackMD\ScoreHud\Addons\OnlineTimeAddon
  * @depend OnlineTime
  */

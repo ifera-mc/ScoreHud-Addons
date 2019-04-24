@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 /**
  * @name RankUpAddon
+ * @version 1.0.0
  * @main JackMD\ScoreHud\Addons\RankUpAddon
  * @depend RankUp
  */

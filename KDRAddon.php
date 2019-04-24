@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 /**
  * @name KDRAddon
+ * @version 1.0.0
  * @main JackMD\ScoreHud\Addons\KDRAddon
  * @depend KDR
  */
