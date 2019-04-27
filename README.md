@@ -14,6 +14,7 @@
 |:--:|:--:|:--:|
 |EconomyApiAddon|`{money}`|[EconomyAPI](https://github.com/poggit-orphanage/EconomyS/tree/master/EconomyAPI)|
 |RankUpAddon|`{prison_rank}`, `{prison_next_rank_price}`|[RankUp](https://github.com/falkirks/RankUp)|
+|RedSkyBlock| `{island_name}`, `{island_members}`, `{island_banned}`, `{island_locked_status}`, `{island_size}`, `{island_rank}`, `{island_value}`|[RedSkyBlock](https://github.com/RedCraftGH/RedSkyBlock)|
 |SkyBlock|`{is_state}`, `{is_blocks}`, `{is_members}`, `{is_size}`, `{is_rank}`|[SkyBlock](https://github.com/GiantQuartz/SkyBlock)|
 |PurePerms|`{rank}`, `{prefix}`, `{suffix}`|[PurePerms](https://github.com/poggit-orphanage/PurePerms)|
 |FactionsPro|`{faction}`, `{faction_power}`|[FactionsPro](https://github.com/poggit-orphanage/FactionsPro)|
