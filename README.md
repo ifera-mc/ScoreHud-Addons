@@ -8,9 +8,13 @@
 
 - Please refer to [here](https://github.com/JackMD/ScoreHud/tree/master#addons) and [here](https://github.com/JackMD/ScoreHud/tree/master#how-to-use-addons).
 
+# How to download?
+
+- Download the repository by clicking the `Clone or download` button on the top right side of this page and then click `Download ZIP` to download all the addons. Or click [here](https://github.com/JackMD/ScoreHud-Addons/archive/master.zip) to download.
+
 # Addons 
 
-|Addon|Supported Tags|Plugin|
+|Addon|Supported Tags|Required Plugin|
 |:--:|:--:|:--:|
 |EconomyApiAddon|`{money}`|[EconomyAPI](https://github.com/poggit-orphanage/EconomyS/tree/master/EconomyAPI)|
 |RankUpAddon|`{prison_rank}`, `{prison_next_rank_price}`|[RankUp](https://github.com/falkirks/RankUp)|
