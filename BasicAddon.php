@@ -21,7 +21,8 @@ namespace JackMD\ScoreHud\Addons
 		 */
 		public function getProcessedTags(Player $player): array{
 			return [
-				"{name}"               => $player->getName(),
+				"{real_name}"          => $player->getName(),
+				"{display_name}"       => $player->getDisplayName(),
 				"{online}"             => count($player->getServer()->getOnlinePlayers()),
 				"{max_online}"         => $player->getServer()->getMaxPlayers(),
 				"{item_name}"          => $player->getInventory()->getItemInHand()->getName(),
