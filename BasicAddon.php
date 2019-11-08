@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 /**
  * @name BasicAddon
- * @version 1.0.0
+ * @version 1.1.0
  * @main    JackMD\ScoreHud\Addons\BasicAddon
  */
 
@@ -21,6 +21,7 @@ namespace JackMD\ScoreHud\Addons
 		 */
 		public function getProcessedTags(Player $player): array{
 			return [
+				"{name}"	       => $player->getName(),
 				"{real_name}"          => $player->getName(),
 				"{display_name}"       => $player->getDisplayName(),
 				"{online}"             => count($player->getServer()->getOnlinePlayers()),
