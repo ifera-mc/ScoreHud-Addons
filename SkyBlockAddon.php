@@ -13,6 +13,7 @@ namespace JackMD\ScoreHud\Addons
 	use JackMD\ScoreHud\addon\AddonBase;
 	use pocketmine\Player;
 	use room17\SkyBlock\session\BaseSession as SkyBlockSession;
+	use room17\SkyBlock\island\RankIds;
 	use room17\SkyBlock\SkyBlock;
 
 	class SkyBlockAddon extends AddonBase{
@@ -45,11 +46,11 @@ namespace JackMD\ScoreHud\Addons
 		public function getIsleState(Player $player){
 			$session = $this->skyBlock->getSessionManager()->getSession($player);
 
-			if((is_null($session)) || (!$session->hasIsle())){
+			if((is_null($session)) || (!$session->hasIsland())){
 				return "No Island";
 			}
 
-			$isle = $session->getIsle();
+			$isle = $session->getIsland();
 
 			return $isle->isLocked() ? "Locked" : "Unlocked";
 		}
@@ -61,11 +62,11 @@ namespace JackMD\ScoreHud\Addons
 		public function getIsleBlocks(Player $player){
 			$session = $this->skyBlock->getSessionManager()->getSession($player);
 
-			if((is_null($session)) || (!$session->hasIsle())){
+			if((is_null($session)) || (!$session->hasIsland())){
 				return "No Island";
 			}
 
-			$isle = $session->getIsle();
+			$isle = $session->getIsland();
 
 			return $isle->getBlocksBuilt();
 		}
@@ -77,11 +78,11 @@ namespace JackMD\ScoreHud\Addons
 		public function getIsleMembers(Player $player){
 			$session = $this->skyBlock->getSessionManager()->getSession($player);
 
-			if((is_null($session)) || (!$session->hasIsle())){
+			if((is_null($session)) || (!$session->hasIsland())){
 				return "No Island";
 			}
 
-			$isle = $session->getIsle();
+			$isle = $session->getIsland();
 
 			return count($isle->getMembers());
 		}
@@ -93,11 +94,11 @@ namespace JackMD\ScoreHud\Addons
 		public function getIsleSize(Player $player){
 			$session = $this->skyBlock->getSessionManager()->getSession($player);
 
-			if((is_null($session)) || (!$session->hasIsle())){
+			if((is_null($session)) || (!$session->hasIsland())){
 				return "No Island";
 			}
 
-			$isle = $session->getIsle();
+			$isle = $session->getIsland();
 
 			return $isle->getCategory();
 		}
@@ -109,18 +110,18 @@ namespace JackMD\ScoreHud\Addons
 		public function getIsleRank(Player $player){
 			$session = $this->skyBlock->getSessionManager()->getSession($player);
 
-			if((is_null($session)) || (!$session->hasIsle())){
+			if((is_null($session)) || (!$session->hasIsland())){
 				return "No Island";
 			}
 
 			switch($session->getRank()){
-				case SkyBlockSession::RANK_DEFAULT:
+				case RankIds::MEMBER:
 					return "Member";
-				case SkyBlockSession::RANK_OFFICER:
+				case RankIds::OFFICER:
 					return "Officer";
-				case SkyBlockSession::RANK_LEADER:
+				case RankIds::LEADER:
 					return "Leader";
-				case SkyBlockSession::RANK_FOUNDER:
+				case RankIds::FOUNDER:
 					return "Founder";
 			}
 
