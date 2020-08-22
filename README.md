@@ -28,4 +28,4 @@
 |CombatLoggerAddon|`{combat_duration}`|[CombatLogger](https://poggit.pmmp.io/ci/JackNoordhuis/PocketMine-Plugins/CombatLogger)|
 |BlockSniperAddon|`{brush_shape}`, `{brush_type}`, `{brush_size}`, `{brush_mode}`|[BlockSniper-API-4.0.0](https://github.com/BlockHorizons/BlockSniper/tree/API-4.0.0)|
 |OnlineTimeAddon|`{total_time}`, `{session_time}`|[OnlineTime](https://github.com/Zedstar16/OnlineTime)|
-|BravoClanAddon| `{clan}` | [BravoClan](https://github.com/Itzdvbravo/BravoClan)|
+|BravoClanAddon| `{clan}`, `{clan_xp}`, `{clan_next_lvl}`, `{clan_kills}`, `{clan_deaths}`, `{clan_members}`, `{clan_max_members}`, `{member_kills}`, `{member_deaths}`| [BravoClan](https://github.com/Itzdvbravo/BravoClan)|
