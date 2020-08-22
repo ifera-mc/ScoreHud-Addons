@@ -2,7 +2,7 @@
 
 /**
  * @name BravoClanAddon
- * @version 0.0.1
+ * @version 1.1
  * @main    JackMD\ScoreHud\Addons\BravoClanAddon
  */
 
@@ -27,7 +27,15 @@ namespace JackMD\ScoreHud\Addons
          */
         public function getProcessedTags(Player $player): array{
             return [
-                "{clan}" => $this->BravoClan->scorehudAddon(strtolower($player->getName())),
+                "{clan}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "clan"),
+                "{clan_xp}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "clan_xp"),
+                "{clan_next_lvl}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "clan_next_lvl"),
+                "{clan_kills}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "clan_kills"),
+                "{clan_deaths}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "clan_deaths"),
+                "{clan_members}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "clan_members"),
+                "{clan_max_members}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "clan_max_members"),
+                "{member_kills}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "member_kills"),
+                "{member_deaths}" => $this->BravoClan->scorehudAddon(strtolower($player->getName()), "member_deaths"),
             ];
         }
     }
