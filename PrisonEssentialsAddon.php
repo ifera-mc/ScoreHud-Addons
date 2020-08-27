@@ -31,7 +31,9 @@ namespace JackMD\ScoreHud\Addons
 			return [
 				"{prison_rank}" => $this->PrisonEssentials->getRank($player),
 				"{prison_nextrank}" => $this->PrisonEssentials->getNextRank($player),
-				"{prison_money_till_next_rank}" => $this->PrisonEssentials->calculateMoney($player),
+				"{price_to_rankup}" => $this->PrisonEssentials->calculateMoney($player),
+				"{prestige}" => $this->PrisonEssentials->getPrestige($player),
+				"{next_prestige}" => $this->PrisonEssentials->getNextPrestige($player),
 			];
 		}
 	}
